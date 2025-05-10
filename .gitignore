@@ -1,0 +1,6 @@
+# Ignore the Firebase service account key file
+oneshot-pool-firebase-adminsdk-fbsvc-fd43af854d.json
+
+# Optionally ignore environment files if used for secrets
+.env
+test.py
