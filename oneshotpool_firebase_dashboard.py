@@ -367,10 +367,6 @@ else:
     # Create DataFrame from the enhanced IAP data
     iaps_df = pd.DataFrame(latest_iaps)
     
-    # Debug: Show raw DataFrame to check what columns are present
-    st.write("Raw IAP Data (Debug):")
-    st.write(iaps_df.head())
-    
     # Format the timestamps to be more readable
     if "timeBought" in iaps_df.columns:
         iaps_df["Formatted_time_bought"] = iaps_df["timeBought"].apply(format_timestamp)
